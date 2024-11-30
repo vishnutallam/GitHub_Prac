@@ -63,6 +63,7 @@ public class loginlogout {
             System.out.println("clicked on logout");
             driver.findElement(By.xpath("//span[normalize-space()='Logout']")).click();//window logout
             System.out.println("clicked on window logout");
+            System.out.println("master branch---clicked on window logout");
             Thread.sleep(3000);
 
         } catch (Exception e) {
