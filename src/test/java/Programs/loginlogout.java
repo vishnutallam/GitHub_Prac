@@ -44,6 +44,7 @@ public class loginlogout {
             driver.findElement(By.xpath("(//div[@class='flex flex-col relative flex-1 gap-1'])[1]//input")).sendKeys("automationvishnupriya@gmail.com");//eamil
             driver.findElement(By.xpath("(//div[@class='flex flex-col relative flex-1 gap-1'])[2]//input")).sendKeys("Trade@12");//password
             driver.findElement(By.xpath("//div[@class='h-max flex flex-col gap-y-5 w-7/12 max-md:w-10/12 max-sm:w-11/12']//button")).click();//sign in
+            System.out.println("master branch clicked on sign in");
             Thread.sleep(3000);
             WebElement  success= driver.findElement(By.xpath("//html/body/div[1]/div/div[1]/div/div/div[contains(text(), \"Logged in successfully\")]"));
             JavascriptExecutor js= (JavascriptExecutor)driver;
