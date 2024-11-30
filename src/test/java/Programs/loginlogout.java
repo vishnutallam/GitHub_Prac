@@ -61,7 +61,9 @@ public class loginlogout {
             driver.findElement(By.xpath("//div[@class='flex gap-7 justify-between items-center text-base font-medium text-neutral-400 max-md:flex-wrap max-lg:hidden']//button")).click();//profile
             System.out.println("clicked on profile");
             driver.findElement(By.xpath("//p[normalize-space()='Log out']")).click();//logout
+            System.out.println("clicked on logout");
             driver.findElement(By.xpath("//span[normalize-space()='Logout']")).click();//window logout
+            System.out.println("clicked on window logout");
             Thread.sleep(3000);
 
         } catch (Exception e) {
