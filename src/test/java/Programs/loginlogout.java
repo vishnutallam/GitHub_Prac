@@ -50,7 +50,7 @@ public class loginlogout {
             JavascriptExecutor js= (JavascriptExecutor)driver;
             String successmsg = (String) js.executeScript("return arguments[0].innerText;", success);
             System.out.println("Text of the element: " + successmsg);
-
+            System.out.println("master message");
 
             if (successmsg.contains("Logged in successfully")) {
                 System.out.println("Login passed!");
